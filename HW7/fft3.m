@@ -1,0 +1,10 @@
+csv = csvread('fft3.csv');
+x = 0:2*cos(-1)/256:2*cos(-1);
+plot(x,csv(1,2:258));
+hold on;
+plot(x,csv(3,2:258));
+% plot(x,csv(4,2:258));
+% plot(x,csv(6,2:258));
+% plot(x,csv(8,2:258));
+% plot(x,csv(10,2:258));
+legend('orginal','m=16');
